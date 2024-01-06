@@ -15,7 +15,7 @@ try
             keystroke "{popclip option block}"
             delay 0.25
 
-			keystroke return
+            keystroke return
 
             repeat 2 times
                 key code 53
