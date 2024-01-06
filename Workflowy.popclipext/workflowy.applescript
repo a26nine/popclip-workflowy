@@ -11,16 +11,12 @@ try
         tell application "System Events"
             keystroke "k" using command down
             delay 0.25
-
             keystroke "{popclip option block}"
             delay 0.25
-
             keystroke return
-
             repeat 2 times
                 key code 53
             end repeat
-
             keystroke return
             keystroke "{popclip text}"
         end tell
