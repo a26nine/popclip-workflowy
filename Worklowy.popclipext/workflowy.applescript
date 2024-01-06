@@ -12,10 +12,12 @@ try
             keystroke "k" using command down
             delay 0.25
 
-            keystroke "Inbox > PopClip"
+            keystroke "{popclip option block}"
             delay 0.25
 
-            repeat 3 times
+			keystroke return
+
+            repeat 2 times
                 key code 53
             end repeat
 

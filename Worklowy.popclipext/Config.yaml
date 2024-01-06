@@ -3,3 +3,9 @@ name: Workflowy
 description: Add the selected text to Workflowy!
 icon: workflowy.svg
 applescript file: workflowy.applescript
+options:
+  - identifier: block
+    type: string
+    label: Workflowy Block
+    description: The block to add the text to.
+    default value: "Inbox > PopClip"
