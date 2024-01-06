@@ -4,6 +4,8 @@ The Workflowy [PopClip](https://www.popclip.app/) extension adds the highlighted
 
 ![Extension](assets/extension.png)
 
+![Extension-GIf](assets/extension.gif)
+
 ### Installation
 
 - Download the PopClip Extension Zip File `Workflowy.popclipextz` from the [Releases](https://github.com/a26nine/popclip-workflowy/releases) section.
