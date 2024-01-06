@@ -1,12 +1,28 @@
-tell application "Workflowy"
-	activate
-	delay 0.25
-	tell application "System Events"
-		keystroke "'" using {command down}
-		delay 0.25
-		(key code 126)
-		(key code 125)
-		(key code 36)
-		keystroke "{popclip text}"
-	end tell
-end tell
+if application "Workflowy" is running then
+    set initialDelay to 0.25
+else
+    set initialDelay to 3
+end if
+
+try
+    tell application "Workflowy"
+        activate
+        delay initialDelay
+        tell application "System Events"
+            keystroke "k" using command down
+            delay 0.25
+
+            keystroke "Inbox > PopClip"
+            delay 0.25
+
+            repeat 3 times
+                key code 53
+            end repeat
+
+            keystroke return
+            keystroke "{popclip text}"
+        end tell
+    end tell
+on error errMsg
+    display dialog "Error: " & errMsg
+end try
