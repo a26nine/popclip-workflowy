@@ -1,0 +1,5 @@
+identifier: dev.a26nine.PopClipExtension.Workflowy
+name: Workflowy
+description: Add the selected text to Workflowy!
+icon: workflowy.svg
+applescript file: workflowy.applescript
